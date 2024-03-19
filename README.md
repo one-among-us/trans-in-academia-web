@@ -7,24 +7,19 @@ nix develop path:.
 ```
 
 ## Project setup
-```
+
+```bash
 npm install
 ```
 
 ### Compiles and hot-reloads for development
-```
-npm run serve
+
+```bash
+npm run dev
 ```
 
 ### Compiles and minifies for production
-```
+
+```bash
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

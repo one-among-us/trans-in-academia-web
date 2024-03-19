@@ -1,3 +1,15 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Logs
+logs
+*.log
+
 .DS_Store
 node_modules
 /dist
@@ -14,7 +26,6 @@ pnpm-debug.log*
 
 # Editor directories and files
 .idea
-.vscode
 .devcontainer
 *.suo
 *.ntvs*
@@ -25,3 +36,8 @@ pnpm-debug.log*
 # misc
 pnpm-lock.yaml
 .pnpm-store
+
+# Local env files
+.env
+.env.*
+!.env.example

@@ -1,25 +1,15 @@
-<script>
-import HomePage from './components/HomePage.vue'
-import NavigationBar from './components/NavigationBar.vue'
-import FooterBar from './components/FooterBar.vue'
+<script setup lang="ts">
 import '@fontsource/inter'
 import '@fontsource/inter-tight'
-
-export default {
-  name: 'App',
-  components: {
-    HomePage,
-    NavigationBar,
-    FooterBar,
-  },
-}
 </script>
 
 <template>
-  <bg />
-  <NavigationBar />
-  <HomePage />
-  <FooterBar />
+  <div id="app">
+    <div class="bg" />
+    <NavigationBar />
+    <NuxtPage />
+    <FooterBar />
+  </div>
 </template>
 
 <style lang="scss">
@@ -31,7 +21,7 @@ export default {
   flex-direction: column;
 }
 
-bg {
+.bg {
   z-index: -1;
   position: fixed;
   height: 100vh;
@@ -45,11 +35,11 @@ body {
 
 @font-face {
   font-family: Sarasa-Gothic-Regular;
-  src: url('assets/fonts/SarasaGothicSC-Regular.ttf');
+  src: url('~/assets/fonts/SarasaGothicSC-Regular.ttf');
 }
 
 @font-face {
   font-family: Sarasa-Gothic-SemiBold;
-  src: url('assets/fonts/SarasaGothicSC-SemiBold.ttf');
+  src: url('~/assets/fonts/SarasaGothicSC-SemiBold.ttf');
 }
 </style>
